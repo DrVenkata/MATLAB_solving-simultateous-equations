@@ -87,7 +87,7 @@ function [Xji,j]=JacobiIterative(a,c)
     %Extract only diagonal elements of 'a' matrix
     D=diag(diag(a));
     X=zeros(n,1); 
-    syms d
+    d=0;
     j=1;
     while j>=1
         % Jacobi iteration equation
